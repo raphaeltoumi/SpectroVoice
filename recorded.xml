@@ -1,0 +1,35 @@
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/linearlayout_main"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+tools:context=".RecordedSpectrogramActivity" >
+
+    <net.galmiza.android.spectrogram.FrequencyView
+        android:id="@+id/frequency_view1"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="PLAY" />
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="BACK" />
+    </LinearLayout>
+</LinearLayout>
